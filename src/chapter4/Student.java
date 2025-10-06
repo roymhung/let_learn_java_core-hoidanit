@@ -9,6 +9,16 @@ public class Student {
 	String firstName;
 	String emailAddress;
 
+	// contructor: ham tao
+	public Student() {
+
+	}
+
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
 	// class method (phương thức của lớp)
 	void learnJava() {
 		System.out.println("Learn Java with Youtube Hỏi Dân IT");
