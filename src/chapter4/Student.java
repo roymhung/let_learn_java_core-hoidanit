@@ -3,8 +3,9 @@ package chapter4;
 public class Student {
 
 	// class attributes (thuộc tính của lớp)
-	String name;
-	int age;
+	private String name;
+	private int age;
+
 	String fullname;
 	String firstName;
 	String emailAddress;
@@ -12,6 +13,22 @@ public class Student {
 	// contructor: ham tao
 	public Student() {
 
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getAge() {
+		return age;
 	}
 
 	public Student(String name, int age) {
@@ -24,9 +41,4 @@ public class Student {
 		System.out.println("Learn Java with Youtube Hỏi Dân IT");
 	}
 
-	String getAge() {
-		// Thay vì trả về "Hỏi Dân IT", bạn nên trả về giá trị age
-		// return String.valueOf(age);
-		return "Hỏi Dân IT";
-	}
 }

@@ -6,6 +6,6 @@ public class P1 {
 		firstObj.a = 10;
 		firstObj.b = 10;
 		firstObj.c = 10;
-		firstObj.d = 10;
+		// firstObj.d = 10;
 	}
 }
