@@ -5,8 +5,8 @@ public class Product {
 	private double price;
 	private double tax;
 
+	// Constructors
 	public Product() {
-
 	}
 
 	public Product(String name, double price, double tax) {
@@ -15,6 +15,7 @@ public class Product {
 		this.tax = tax;
 	}
 
+	// Getter và Setter
 	public String getName() {
 		return name;
 	}
@@ -39,16 +40,14 @@ public class Product {
 		this.tax = tax;
 	}
 
-	public Product nhapThongTin(String name, double price, double tax) {
-		Product pr = new Product(name, price, tax);
-		return pr;
-	}
-
-	public void xuatThongTin(Product pr) {
-		System.out.println("Name: " + pr.name + "/ price = " + pr.getPrice() + "/ tax= " + pr.getTax());
-	}
-
-	public double getTaxPrice(double price, double tax) {
+	// Tính giá sau thuế
+	public double getTaxPrice() {
 		return price * tax;
+	}
+
+	// In thông tin sản phẩm
+	@Override
+	public String toString() {
+		return "Product{name='" + name + "', price=" + price + ", tax=" + tax + "}";
 	}
 }
