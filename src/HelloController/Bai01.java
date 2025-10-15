@@ -4,14 +4,11 @@ import java.util.Scanner;
 
 public class Bai01 {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Nhap ten: ");
-		String name = scanner.nextLine();
+		 String name = "hoidanit Hello World";
 
-		System.out.println("Nhap diem: ");
-		int score = scanner.nextInt();
-
-		System.out.println(name + " co diem = " + score);
-		scanner.close();
+	        System.out.println("length: " + name.length());
+	        System.out.println("toUpperCase: " + name.toUpperCase());
+	        System.out.println("toLowerCase: " + name.toLowerCase());
+	        System.out.println("charAt(1): " + name.charAt(1));
 	}
 }
